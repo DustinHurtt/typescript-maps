@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/index.ts"],"names":[],"mappings":"AAAA,OAAO,CAAC,GAAR,CAAY,UAAZ,EAAwB,WAAxB;AACA,OAAO,CAAC,GAAR,CAAY,oBAAZ;AAEA,OAAO,CAAC,GAAR,CAAY,aAAZ","file":"src.f10117fe.js","sourceRoot":"..","sourcesContent":["console.log('hi there', \"YOOOOOOOO\")\r\nconsole.log(\"IS THIS WORKING???\")\r\n\r\nconsole.log('live update')\r\n"]}
