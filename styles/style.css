@@ -1,6 +1,9 @@
-
+body {
+    height: 100vh
+}
 
 #map {
+    /* height: 480px; */
     height: 100%;
     /* width: 100%; */
 }
