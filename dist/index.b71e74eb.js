@@ -557,12 +557,18 @@ class CustomMap {
         });
     }
     addMarker(mappable) {
-        new google.maps.Marker({
+        const marker = new google.maps.Marker({
             map: this.googleMap,
             position: {
                 lat: mappable.location.lat,
                 lng: mappable.location.lng
             }
+        });
+        marker.addListener("click", ()=>{
+            const infoWindow = new google.maps.InfoWindow({
+                content: mappable.markerContent()
+            });
+            infoWindow.open(this.googleMap, marker);
         });
     }
 }
@@ -610,6 +616,9 @@ class User {
             lat: parseFloat((0, _fakerDefault.default).address.latitude()),
             lng: parseFloat((0, _fakerDefault.default).address.longitude())
         };
+    }
+    markerContent() {
+        return `User Name: ${this.name}`;
     }
 }
 
@@ -139004,6 +139013,14 @@ class Company {
             lat: parseFloat((0, _fakerDefault.default).address.latitude()),
             lng: parseFloat((0, _fakerDefault.default).address.longitude())
         };
+    }
+    markerContent() {
+        return `
+        <div>
+        <h1>Company Name: ${this.companyName}</h1>
+        <h3>Catchphrase: ${this.catchPhrase}</h3>
+        </div>
+        `;
     }
 }
 
