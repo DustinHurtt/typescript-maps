@@ -610,6 +610,7 @@ parcelHelpers.export(exports, "User", ()=>User);
 var _faker = require("faker");
 var _fakerDefault = parcelHelpers.interopDefault(_faker);
 class User {
+    color = "red";
     constructor(){
         this.name = (0, _fakerDefault.default).name.firstName();
         this.location = {
@@ -139006,6 +139007,7 @@ parcelHelpers.export(exports, "Company", ()=>Company);
 var _faker = require("faker");
 var _fakerDefault = parcelHelpers.interopDefault(_faker);
 class Company {
+    color = "red";
     constructor(){
         this.companyName = (0, _fakerDefault.default).company.companyName();
         this.catchPhrase = (0, _fakerDefault.default).company.catchPhrase();
