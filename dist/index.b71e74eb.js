@@ -535,7 +535,6 @@ function hmrAcceptRun(bundle, id) {
 ///<reference types='@types/google.maps' />
 // import { User } from './User';
 // import { Company } from './Company';
-if (document.getElementById("map")) console.log("MAP");
 new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
     center: {
